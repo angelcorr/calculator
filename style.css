@@ -1,0 +1,39 @@
+body {
+  padding: 5px 5px 5px 5px;
+}
+
+.custom-header {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-section {
+  height: 50%;
+  justify-content: space-around;
+}
+
+.custom-first-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px 10px 10px 10px;
+  margin: 10px 10px 10px 10px;
+}
+
+.custom-second-div {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 10px 10px 10px;
+  margin: 10px 10px 10px 10px;
+}
+
+input {
+  margin: 5px;
+  border-radius: 5px;
+}
+
+button {
+  margin: 5px;
+  border-radius: 5px;
+}

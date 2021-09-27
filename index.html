@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+  rel="stylesheet"/>
+  <link
+  href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+  rel="stylesheet"/>
+  <link
+  href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css"
+  rel="stylesheet"/>
+  <link rel="stylesheet" href="./style.css">
+  <title>Document</title>
+</head>
+<body>
+  <header class="container d-flex custom-header">
+    <h1>Calculator</h1>
+    <h3>I'm the fastest calculator of all times:)</h3>
+  </header>
+
+  <main>
+    <form action="">
+      <section class="container d-flex custom-section">
+        <div class="custom-first-div">
+          <input type="number" id="firstValue">
+          <input type="number" id="secondValue">
+          <input type="number" id="result" disabled>
+        </div>
+        <div class="custom-second-div">
+          <button type="button" onclick="add()">Add</button>
+          <button type="button" onclick="subtract()">Subtract</button>
+          <button type="button" onclick="multiply()">Multiply</button>
+          <button type="button" onclick="divide()">Divide</button>
+          <button type="button" onclick="clearValues()">Clear</button>
+          <button type="button" onclick="alerta()">Prompt</button>
+        </div>
+      </section>
+    </form>
+  </main>
+
+  <script src="./main.js"></script>
+  <script
+  type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js">
+  </script>
+</body>
+</html>
