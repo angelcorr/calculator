@@ -9,25 +9,24 @@ function getSecondValue() {
 function add() {
   const firstValue = getFirstValue();
   const secondValue = getSecondValue();
-  document.getElementById('result').value = firstValue + secondValue;
+  document.getElementById('result').value = (firstValue + secondValue);
 }
 
 function subtract() {
   const firstValue = getFirstValue();
   const secondValue = getSecondValue();
-  document.getElementById('result').value = firstValue - secondValue;
-}
+  document.getElementById('result').value = (firstValue - secondValue)}
 
 function multiply() {
   const firstValue = getFirstValue();
   const secondValue = getSecondValue();
-  document.getElementById('result').value = firstValue * secondValue;
+  document.getElementById('result').value = (firstValue * secondValue);
 }
 
 function divide() {
   const firstValue = getFirstValue();
   const secondValue = getSecondValue();
-  document.getElementById('result').value = firstValue / secondValue;
+  document.getElementById('result').value = (firstValue / secondValue);
 }
 
 function clearValues() {
@@ -44,8 +43,7 @@ function alerta() {
   const signPrompt = prompt("Introduzca signo");
 
   if (!Number.isFinite(firstValuePrompt) || !Number.isFinite(secondValuePrompt) || !['+', '-', '*', '/'].includes(signPrompt)) {
-    alert('No son números, o no es un signo soportado');
-    return;
+    return alert('No son números, o no es un signo soportado');
   }
 
   if (signPrompt === '+') {
@@ -58,5 +56,5 @@ function alerta() {
     resultPrompt = firstValuePrompt / secondValuePrompt;
   }
 
-  alert(resultPrompt);
+  alert(resultPrompt.toFixed(2));
 }
